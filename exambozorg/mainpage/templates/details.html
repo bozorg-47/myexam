@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cars</title>
+        <link rel="stylesheet" href="{% static '/styles.css' %}">
+    </head>
+<body>
+
+    <div class="txt3">
+        <h1>{{ mymember.content }}</h1>
+        
+        <p>title: {{ mymember.title }}</p>
+        <p>pub_date: {{ mymember.pub_date }}</p>
+
+        <p>Back to <a href="/">BlogPost</a></p>
+
+    </div>
+
+
+</body>
+</html>

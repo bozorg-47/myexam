@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cars</title>
+    <link rel="stylesheet" href="{% static '/styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+         <h1>VISIT OUR PRODUCTS</h1>
+    </nav>
+
+<section class="content">
+    <div class="txt4">
+        {% for x in mycar %}
+        <h2>{{x.name}}</h2>
+        <p>Description: {{x.description}}</p>
+        <p>price: {{x.price}}</p>
+        {% endfor %}
+
+        <p>Back to <a href="/">BlogPost</a></p>
+    </div>
+
+    <div class="img2">
+        <img src="{% static 'img/mycar.jpg'%}" alt="">
+    </div>
+
+</section>
+ 
+   
+
+
+
+</body>
+</html>
